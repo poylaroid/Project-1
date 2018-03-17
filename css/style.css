@@ -9,8 +9,9 @@
     background-color: rgb(0, 0, 0);
     color: rgb(182, 182, 192);
     background-image: url("../images/music.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-size: center;
     }
 
 /* display-4 font */
