@@ -9,7 +9,7 @@
 </head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
@@ -26,10 +26,10 @@
       <form>
         <div class="form-row">
           <div class="col-12 col-md-9 mb-2 mb-md-0">
-            <input type="text" class="form-control form-control-lg" placeholder="Enter the artist's name here...">
+            <input type="text" class="form-control form-control-lg" placeholder="Enter the artist's name here..." id="channel">
           </div>
           <div class="col-12 col-md-3">
-            <button type="submit" class="btn btn-block btn-lg btn-primary">Go!</button>
+            <button type="submit" class="btn btn-block btn-lg btn-primary" id="go">Go!</button>
           </div>
         </div>
       </form>
@@ -125,9 +125,13 @@
           </a>
           <div class="card-body">
             <h4 class="card-title">
+              <div id="results1">
+              </div>
               <a href="#">Video1</a>
             </h4>
-            <h5>Artist Name</h5>
+            <h5>
+              <div class="artist-name"></div>
+            </h5>
             <p class="card-text">Related Video</p>
           </div>
           <div class="card-footer">
@@ -148,6 +152,7 @@
           </a>
           <div class="card-body">
             <h4 class="card-title">
+
               <a href="#">Play by location</a>
             </h4>
             <h5>Location</h5>
@@ -176,9 +181,13 @@
           </a>
           <div class="card-body">
             <h4 class="card-title">
+              <div id="results2">
+              </div>
               <a href="#">Video2</a>
             </h4>
-            <h5>Artist Name</h5>
+            <h5>
+              <div class="artist-name"></div>
+            </h5>
             <p class="card-text">Related Video</p>
           </div>
           <div class="card-footer">
@@ -224,6 +233,10 @@
       </div>
       <!-- /.container -->
     </footer>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 
