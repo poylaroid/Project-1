@@ -27,12 +27,15 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             var albumResult = response;
+            console.log(response);
             var albumObject = (albumResult.topalbums.album[0].name);
+            var albumImage = (albumResult.topalbums.album[0].image[1]["#text"]);
             var albumObject2 = (albumResult.topalbums.album[1].name);
             var albumObject3 = (albumResult.topalbums.album[2].name);
             var albumObject4 = (albumResult.topalbums.album[3].name);
             var albumObject5 = (albumResult.topalbums.album[4].name);
-            $("#albumResults").append(albumObject + "<br>" + albumObject2 + "<br>" + albumObject3 + "<br>" + albumObject4 + "<br>" + albumObject5);
+            
+            $("#albumResults").append(albumObject + albumImage + "<br>" + albumObject2 + "<br>" + albumObject3 + "<br>" + albumObject4 + "<br>" + albumObject5);
             console.log("This");
         })
 
