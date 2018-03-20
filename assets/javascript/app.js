@@ -1,6 +1,8 @@
 
 
 $(document).ready (function(){
+
+
     $("#go").on("click",function(event){
       event.preventDefault();
       var channelName=$("#channel").val();
@@ -25,4 +27,6 @@ $(document).ready (function(){
         $("#results2").html(object2);
       })
     })
+
+
 }) 
