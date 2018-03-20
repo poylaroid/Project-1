@@ -9,7 +9,8 @@
 </head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
@@ -17,7 +18,7 @@
   <!-- Header/Intro Div-->
 
   <div class="jumbotron">
-    <p class="lead">The only Music Artist Search App you'll need...</p>
+
     <h1 class="display-4">MUSICBOOT</h1>
 
 
@@ -36,6 +37,9 @@
     </div>
     <!-- Div for Jumbotron -->
   </div>
+
+  <h3 class="lead">The only Music Artist Search App you'll need...</h3>
+<h2 class="top-text">Top Result:</h2>
 
   <!--Start of Div for Bio, Tour Dates and Songs -->
   <div class="container">
@@ -124,10 +128,16 @@
           </a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Video1</a>
+
+                <a href="#">Popular Videos</a>
+              <div id="results1">
+              </div> 
             </h4>
-            <h5>Artist Name</h5>
-            <p class="card-text">Related Video</p>
+            <h5>
+              <div class="artist-name"></div>
+            </h5>
+            
+
           </div>
           <div class="card-footer">
             <!-- Like button -->
@@ -147,6 +157,8 @@
           </a>
           <div class="card-body">
             <h4 class="card-title">
+
+
               <a href="#">Play by location</a>
             </h4>
             <h5>Location</h5>
@@ -175,10 +187,14 @@
           </a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Video2</a>
+
+                <a href="#">Popular Videos</a>
+              <div id="results2">
+              </div>  
             </h4>
-            <h5>Artist Name</h5>
-            <p class="card-text">Related Video</p>
+            <h5>
+              <div class="artist-name"></div>
+            </h5>           
           </div>
           <div class="card-footer">
             <!-- Like button -->
@@ -214,17 +230,22 @@
     </div>
 
 
+
     <hr>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Powered by | Musicboot 2018</p>
+      <div class="footer-bottom">
+       <p>Powered by | Musicbootstrap 2018</p>
       </div>
       <!-- /.container -->
-    </footer>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="./javascript/javascript.js"></script>
+
+ 
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+        <script type="text/javascript" src="./javascript/javascript.js"></script>
+
+
 </body>
 
 </html>
