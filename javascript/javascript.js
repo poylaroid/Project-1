@@ -31,11 +31,15 @@ $(document).ready(function () {
             var albumObject = (albumResult.topalbums.album[0].name);
             var albumImage = (albumResult.topalbums.album[0].image[1]["#text"]);
             var albumObject2 = (albumResult.topalbums.album[1].name);
+            var albumImage2 = (albumResult.topalbums.album[1].image[1]["#text"]);
             var albumObject3 = (albumResult.topalbums.album[2].name);
+            var albumImage3 = (albumResult.topalbums.album[2].image[1]["#text"]);
             var albumObject4 = (albumResult.topalbums.album[3].name);
+            var albumImage4 = (albumResult.topalbums.album[3].image[1]["#text"]);
             var albumObject5 = (albumResult.topalbums.album[4].name);
+            var albumImage5 = (albumResult.topalbums.album[4].image[1]["#text"]);
             
-            $("#albumResults").append(albumObject + albumImage + "<br>" + albumObject2 + "<br>" + albumObject3 + "<br>" + albumObject4 + "<br>" + albumObject5);
+            $("#albumResults").append("<img src=" + albumImage + "/> " + albumObject +  "<br>" + "<img src=" + albumImage2 + "/> " + albumObject2 +  "<br>" + "<img src=" + albumImage3 + "/> " + albumObject3 +  "<br>" + "<img src=" + albumImage4 + "/> "  + albumObject4 + "<br>" + "<img src=" + albumImage5 + "/> " + albumObject5 +  "<br>");
             console.log("This");
         })
 
