@@ -3,9 +3,9 @@
 $(document).ready (function(){
 
 
-    $("#go").on("click",function(event){
+    $("#search-button").on("click",function(event){
       event.preventDefault();
-      var channelName=$("#channel").val();
+      var channelName=$("#search-term").val();
       console.log(channelName)
       $(".artist-name").html(channelName);
       
