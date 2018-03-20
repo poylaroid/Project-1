@@ -6,9 +6,9 @@ $(document).ready(function () {
         console.log(artistName)
         $(".artist-name").append(artistName);
 
-        var queryURL = "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artistName + "&api_key=acd7fd0fc6f286de62a8ee2d0e69885f&format=json"
-        var queryURL2 = "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=" + artistName + "&api_key=acd7fd0fc6f286de62a8ee2d0e69885f&format=json"
-        var queryURL3 = "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=" + artistName + "&api_key=acd7fd0fc6f286de62a8ee2d0e69885f&format=json"
+        var queryURL = "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artistName + "&api_key=acd7fd0fc6f286de62a8ee2d0e69885f&format=json"
+        var queryURL2 = "https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=" + artistName + "&api_key=acd7fd0fc6f286de62a8ee2d0e69885f&format=json"
+        var queryURL3 = "https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=" + artistName + "&api_key=acd7fd0fc6f286de62a8ee2d0e69885f&format=json"
 
         //artistBio AJAX call
         $.ajax({
@@ -49,12 +49,17 @@ $(document).ready(function () {
         }).then(function (response) {
             var similarResult = response;
             var similarObject = (similarResult.similarartists.artist[0].name);
+            var similarImage = (similarResult.similarartists.artist[0].image[1]["#text"]);
             var similarObject2 = (similarResult.similarartists.artist[1].name);
+            var similarImage2 = (similarResult.similarartists.artist[1].image[1]["#text"]);
             var similarObject3 = (similarResult.similarartists.artist[2].name);
+            var similarImage3 = (similarResult.similarartists.artist[2].image[1]["#text"]);
             var similarObject4 = (similarResult.similarartists.artist[3].name);
+            var similarImage4 = (similarResult.similarartists.artist[3].image[1]["#text"]);
             var similarObject5 = (similarResult.similarartists.artist[4].name);
+            var similarImage5 = (similarResult.similarartists.artist[4].image[1]["#text"]);
             console.log(response);
-            $("#similarResults").append(similarObject + "<br>" + similarObject2 + "<br>" + similarObject3 + "<br>" + similarObject4 + "<br>" + similarObject5);
+            $("#similarResults").append("<img src=" + similarImage + "/> " + similarObject +  "<br>" + "<img src=" + similarImage2 + "/> " + similarObject2 +  "<br>" + "<img src=" + similarImage3 + "/> " + similarObject3 +  "<br>" + "<img src=" + similarImage4 + "/> "  + similarObject4 + "<br>" + "<img src=" + similarImage5 + "/> " + similarObject5 +  "<br>");
             console.log("This");
         })
 
