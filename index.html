@@ -27,12 +27,10 @@
       <form>
         <div class="form-row">
           <div class="col-12 col-md-9 mb-2 mb-md-0">
-
-            <input type="text" class="form-control form-control-lg" placeholder="Enter the artist's name here..." id="channel">
+            <input type="text" class="form-control form-control-lg" id="search-term" placeholder="Enter the artist's name here...">
           </div>
           <div class="col-12 col-md-3">
-            <button type="submit" class="btn btn-block btn-lg btn-primary" id="go">Go!</button>
-
+            <button type="submit" class="btn btn-block btn-lg btn-primary" id="search-button">Go!</button>
           </div>
         </div>
       </form>
@@ -48,16 +46,16 @@
     <!-- Bio -->
     <div class="row">
       <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
+        <div class= id=artistBio "card h-100">
           <a href="#">
             <!-- <img class="card-img-top" src="http://placehold.it/700x400" alt="Band Picture"> -->
           </a>
+          
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Bio</a>
+              <a href="#">Artist Bio //</a>           
             </h4>
-            <h5>Name of the Artist</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <p class="card-text" id="artistResult"></p>
           </div>
           <div class="card-footer">
             <!-- Like button -->
@@ -77,10 +75,9 @@
           </a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Tour Dates</a>
+              <a href="#">Top Albums //</a>
             </h4>
-            <h5>Dates:</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <p class="card-text" id="albumResults"></p>
           </div>
           <div class="card-footer">
             <!-- Like button -->
@@ -99,11 +96,11 @@
             <!-- <img class="card-img-top" src="http://placehold.it/700x400" alt=""> -->
           </a>
           <div class="card-body">
+            
             <h4 class="card-title">
-              <a href="#">Songs/Albums</a>
+              <a href="#">Similar Artists //</a>
             </h4>
-            <h5>Playlist</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <p class="card-text" id="similarResults"></p>
           </div>
           <div class="card-footer">
             <!-- Like button -->
@@ -241,14 +238,12 @@
        <p>Powered by | Musicbootstrap 2018</p>
       </div>
       <!-- /.container -->
+
  
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-
+        <script type="text/javascript" src="./javascript/javascript.js"></script>
 
 
 </body>
