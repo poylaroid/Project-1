@@ -39,21 +39,21 @@
   </div>
 
   <h3 class="lead">The only Music Artist Search App you'll need...</h3>
-<h2 class="top-text">Top Result:</h2>
+  <h2 class="top-text">Top Result:</h2>
 
   <!--Start of Div for Bio, Tour Dates and Songs -->
   <div class="container">
     <!-- Bio -->
     <div class="row">
       <div class="col-lg-4 col-md-6 mb-4">
-        <div class= "card h-100">
+        <div class="card h-100">
           <a href="#">
             <!-- <img class="card-img-top" src="http://placehold.it/700x400" alt="Band Picture"> -->
           </a>
-          
+
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Artist Bio //</a>           
+              <a href="#">Artist Bio //</a>
             </h4>
             <p class="card-text" id="artistResult"></p>
           </div>
@@ -96,7 +96,7 @@
             <!-- <img class="card-img-top" src="http://placehold.it/700x400" alt=""> -->
           </a>
           <div class="card-body">
-            
+
             <h4 class="card-title">
               <a href="#">Similar Artists //</a>
             </h4>
@@ -129,14 +129,14 @@
           <div class="card-body">
             <h4 class="card-title">
 
-                <a href="#">Popular Videos</a>
+              <a href="#">Popular Videos</a>
               <div id="results1">
-              </div> 
+              </div>
             </h4>
             <h5>
               <div class="artist-name"></div>
             </h5>
-            
+
 
           </div>
           <div class="card-footer">
@@ -188,13 +188,13 @@
           <div class="card-body">
             <h4 class="card-title">
 
-                <a href="#">Popular Videos</a>
+              <a href="#">Popular Videos</a>
               <div id="results2">
-              </div>  
+              </div>
             </h4>
             <h5>
               <div class="artist-name"></div>
-            </h5>           
+            </h5>
           </div>
           <div class="card-footer">
             <!-- Like button -->
@@ -229,21 +229,38 @@
       </div>
     </div>
 
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Recent Artists</th>
+          </tr>
+          <button id ="clear">Clear Searches</button>
+        </thead>
+        <tbody id="artist-data">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
 
 
-    <hr>
 
-    <!-- Footer -->
-      <div class="footer-bottom">
-       <p>Powered by | Musicbootstrap 2018</p>
-      </div>
-      <!-- /.container -->
+  <hr>
 
- 
+  <!-- Footer -->
+  <div class="footer-bottom">
+    <p>Powered by | Musicbootstrap 2018</p>
+  </div>
+  <!-- /.container -->
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-        <script type="text/javascript" src="./javascript/javascript.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <script type="text/javascript" src="./javascript/javascript.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
 
 
 </body>

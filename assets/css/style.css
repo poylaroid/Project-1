@@ -76,3 +76,14 @@ h3{
 	color: #fff;
     background: black;
 }
+.table{
+    background-color:white;
+
+}
+tr{
+    background-color: #fff;
+    color: black;
+}
+#clear{
+    float:right;
+}
