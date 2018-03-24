@@ -45,12 +45,12 @@ $(document).ready(function () {
     var recentName = $('#search-term').val().trim();
 
     console.log(recentName)
-    database.ref().push({
+    database.ref("User").push({
       recentName: recentName
 
     });
   });
-  database.ref().on("child_added", function (childSnapshot) {
+  database.ref("User").on("child_added", function (childSnapshot) {
     console.log("this " + childSnapshot.val())
     var recentName = childSnapshot.val().recentName;
 
@@ -62,7 +62,9 @@ $(document).ready(function () {
 
     $("#clear").click(function(){
       $("#artist-data").empty();
+      database.ref("User").remove();
   });
   });
+
 
 });
