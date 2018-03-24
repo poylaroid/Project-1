@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  $("#bio-field").hide();
+  $("#top-field").hide();
+  $("#song-field").hide();
+  $("#video-field").hide();
+  $("#recent-field").hide();
+
 
 
   $("#search-button").on("click", function (event) {
@@ -6,6 +12,12 @@ $(document).ready(function () {
     var channelName = $("#search-term").val();
     //console.log(channelName)
     //$(".artist-name").html(channelName);
+    $("#bio-field").show();
+    $("#top-field").show();
+    $("#song-field").show();
+    $("#video-field").show();
+    $("#recent-field").show();
+  
 
     var queryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + channelName + "&key=AIzaSyC30mnkcq5ly-Nr-kHMh0f05WwzzVtuO3Q&maxResults=10"
 
