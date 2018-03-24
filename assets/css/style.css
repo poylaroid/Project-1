@@ -106,9 +106,20 @@ tr{
   }
 
   .card-body{
-      background-color: #a7adb3;
+      background-color: #232425;
   }
 
   .card-footer{
       background-color: #000;
   }
+
+  a{
+    font-family: 'Poiret One', cursive; 
+    color: #fff;
+  }
+
+  .card-text {
+      color: #fff;
+  }
+
+  
