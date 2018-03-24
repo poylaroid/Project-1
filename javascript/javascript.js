@@ -38,9 +38,11 @@ $(document).ready(function () {
             var albumImage4 = (albumResult.topalbums.album[3].image[1]["#text"]);
             var albumObject5 = (albumResult.topalbums.album[4].name);
             var albumImage5 = (albumResult.topalbums.album[4].image[1]["#text"]);
-            
-            $("#albumResults").html("<img src=" + albumImage + "/> " + albumObject +  "<br>" + "<img src=" + albumImage2 + "/> " + albumObject2 +  "<br>" + "<img src=" + albumImage3 + "/> " + albumObject3 +  "<br>" + "<img src=" + albumImage4 + "/> "  + albumObject4 + "<br>" + "<img src=" + albumImage5 + "/> " + albumObject5 +  "<br>");
-            //console.log("This");
+
+            //append results to 
+            $("#albumResults").append("<img src=" + albumImage + "/> " + albumObject + "<br>" + "<img src=" + albumImage2 + "/> " + albumObject2 + "<br>" + "<img src=" + albumImage3 + "/> " + albumObject3 + "<br>" + "<img src=" + albumImage4 + "/> " + albumObject4 + "<br>" + "<img src=" + albumImage5 + "/> " + albumObject5 + "<br>");
+            console.log("This");
+
         })
 
         $.ajax({
@@ -58,9 +60,11 @@ $(document).ready(function () {
             var similarImage4 = (similarResult.similarartists.artist[3].image[1]["#text"]);
             var similarObject5 = (similarResult.similarartists.artist[4].name);
             var similarImage5 = (similarResult.similarartists.artist[4].image[1]["#text"]);
-            //console.log(response);
-            $("#similarResults").html("<img src=" + similarImage + "/> " + similarObject +  "<br>" + "<img src=" + similarImage2 + "/> " + similarObject2 +  "<br>" + "<img src=" + similarImage3 + "/> " + similarObject3 +  "<br>" + "<img src=" + similarImage4 + "/> "  + similarObject4 + "<br>" + "<img src=" + similarImage5 + "/> " + similarObject5 +  "<br>");
-            //console.log("This");
+
+            console.log(response);
+            $("#similarResults").append("<img src=" + similarImage + "/> " + similarObject + "<br>" + "<img src=" + similarImage2 + "/> " + similarObject2 + "<br>" + "<img src=" + similarImage3 + "/> " + similarObject3 + "<br>" + "<img src=" + similarImage4 + "/> " + similarObject4 + "<br>" + "<img src=" + similarImage5 + "/> " + similarObject5 + "<br>");
+            console.log("This");
+
         })
 
     })
