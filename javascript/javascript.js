@@ -16,9 +16,11 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             var result = response;
+            console.log(result);
             var artistObject = (result.artist.bio.content);
-            $("#artistResult").html(artistObject);
-            //console.log("This");
+            var artistPhoto = (result.artist.image[3]["#text"]);
+            $("#artistResult").html("<img src=" + artistPhoto + "/>" + artistObject);
+            
         })
 
         //artistAlbum AJAX call
@@ -44,7 +46,7 @@ $(document).ready(function () {
             console.log("This");
 
         })
-
+//<a href=\"http://design.optimus.com/projects?currentPage=2\">Next Page</a> </div>")
         $.ajax({
             url: queryURL3,
             method: "GET"
@@ -62,13 +64,17 @@ $(document).ready(function () {
             var similarImage5 = (similarResult.similarartists.artist[4].image[1]["#text"]);
 
             console.log(response);
-            $("#similarResults").append("<img src=" + similarImage + "/> " + similarObject + "<br>" + "<img src=" + similarImage2 + "/> " + similarObject2 + "<br>" + "<img src=" + similarImage3 + "/> " + similarObject3 + "<br>" + "<img src=" + similarImage4 + "/> " + similarObject4 + "<br>" + "<img src=" + similarImage5 + "/> " + similarObject5 + "<br>");
+            $("#similarResults").append("<img src=" + similarImage + "/> " + "<a href='https://google.com/'>" +similarObject + "</>" + "<br>" + "<img src=" + similarImage2 + "/> " + similarObject2 + "<br>" + "<img src=" + similarImage3 + "/> " + similarObject3 + "<br>" + "<img src=" + similarImage4 + "/> " + similarObject4 + "<br>" + "<img src=" + similarImage5 + "/> " + similarObject5 + "<br>");
             console.log("This");
+
+           
+
+            })
+            
 
         })
 
     })
-})
 
 //artist getInfo
 //method2
