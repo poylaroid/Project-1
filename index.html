@@ -8,7 +8,7 @@
   <title>Musicboot</title>
 </head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One|Rammetto+One" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,25 +35,23 @@
         </div>
       </form>
     </div>
+    
     <!-- Div for Jumbotron -->
   </div>
+ 
+</div>
 
-  <h3 class="lead">The only Music Artist Search App you'll need...</h3>
-<h2 class="top-text">Top Result:</h2>
-
+<p class="script">The only search app you'll need...</p>
   <!--Start of Div for Bio, Tour Dates and Songs -->
   <div class="container">
     <!-- Bio -->
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class= "card h-100">
-          <a href="#">
-            <!-- <img class="card-img-top" src="http://placehold.it/700x400" alt="Band Picture"> -->
-          </a>
-          
+   
+      <div class="col-lg-12">
+        <div class="card h-100">
+        
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Artist Bio //</a>           
+              <a href="#">Artist Bio</a>
             </h4>
             <p class="card-text" id="artistResult"></p>
           </div>
@@ -65,17 +63,21 @@
           </div>
         </div>
       </div>
+     </div>
+    </div>
 
+    <hr>
       <!-- Top Albums -->
-
-      <div class="col-lg-4 col-md-6 mb-4">
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-6 col-md-12 mb-6">
         <div class="card h-100">
           <a href="#">
             <!-- <img class="card-img-top" src="http://placehold.it/700x400" alt=""> -->
           </a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Top Albums //</a>
+              <a href="#">Top Albums</a>
             </h4>
             <p class="card-text" id="albumResults"></p>
           </div>
@@ -90,15 +92,15 @@
 
       <!-- Songs and Albums -->
 
-      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="col-lg-6 col-md-12 mb-6">
         <div class="card h-100">
           <a href="#">
             <!-- <img class="card-img-top" src="http://placehold.it/700x400" alt=""> -->
           </a>
           <div class="card-body">
-            
+
             <h4 class="card-title">
-              <a href="#">Similar Artists //</a>
+              <a href="#">Similar Artists</a>
             </h4>
             <p class="card-text" id="similarResults"></p>
           </div>
@@ -111,12 +113,12 @@
         </div>
       </div>
     </div>
-
+</div>
   </div>
   </div>
-
+</div>
   <hr>
-  <!-- Div for Youtube 1 and play by location -->
+  <!-- Div for Popular Videos 1 and 2 -->
 
   <div class="container">
     <!-- Youtube 1st -->
@@ -129,26 +131,25 @@
           <div class="card-body">
             <h4 class="card-title">
 
-                <a href="#">Popular Videos</a>
+              <a href="#">Popular Videos</a>
               <div id="results1">
-              </div> 
+              </div>
             </h4>
             <h5>
               <div class="artist-name"></div>
             </h5>
-            
+
 
           </div>
           <div class="card-footer">
-            <!-- Like button -->
-            <!-- <button style="font-size:15px">Like
+           <!-- Like button -->
+
+            <button style="font-size:15px">Like
                   <i class="fa fa-thumbs-up" style="font-size:15px;color:blue"></i>
-                </button> -->
+                </button>
           </div>
         </div>
-      </div>
-
-      <!-- Played by location -->
+      </div> 
 
       <div class="col-lg-6 col-md-12 mb-6">
         <div class="card h-100">
@@ -158,92 +159,60 @@
           <div class="card-body">
             <h4 class="card-title">
 
-
-              <a href="#">Play by location</a>
-            </h4>
-            <h5>Location</h5>
-            <p class="card-text">Location</p>
-          </div>
-          <div class="card-footer">
-            <!-- Like button -->
-            <!-- <button style="font-size:15px">Like
-                      <i class="fa fa-thumbs-up" style="font-size:15px;color:blue"></i>
-                    </button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <!-- Div for Viedo 2 and Similar Bands -->
-
-    <!-- Youtube 2nd -->
-    <div class="row">
-      <div class="col-lg-6 col-md-12 mb-6">
-        <div class="card h-100">
-          <a href="#">
-            <!-- <img class="card-img-top" src="http://placehold.it/700x400" alt="Band Picture"> -->
-          </a>
-          <div class="card-body">
-            <h4 class="card-title">
-
-                <a href="#">Popular Videos</a>
+              <a href="#">Popular Videos</a>
               <div id="results2">
-              </div>  
+              </div>
             </h4>
             <h5>
               <div class="artist-name"></div>
-            </h5>           
+            </h5>
           </div>
           <div class="card-footer">
             <!-- Like button -->
-            <!-- <button style="font-size:15px">Like
+            <button style="font-size:15px">Like
                         <i class="fa fa-thumbs-up" style="font-size:15px;color:blue"></i>
-                      </button> -->
+                      </button>
           </div>
         </div>
-      </div>
-
-      <!-- Similar Bands -->
-
-      <div class="col-lg-6 col-md-12 mb-6">
-        <div class="card h-100">
-          <a href="#">
-            <!-- <img class="card-img-top" src="http://placehold.it/700x400" alt="Band Picture"> -->
-          </a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">Similar Bands</a>
-            </h4>
-            <h5>Band Name</h5>
-            <p class="card-text">Location</p>
-          </div>
-          <div class="card-footer">
-            <!-- Like button -->
-            <!-- <button style="font-size:15px">Like
-                            <i class="fa fa-thumbs-up" style="font-size:15px;color:blue"></i>
-                          </button> -->
-          </div>
         </div>
-      </div>
     </div>
 
+<hr>
+      
+
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Recent Artists</th>
+          </tr>
+          <button id ="clear">Clear Searches</button>
+        </thead>
+        <tbody id="artist-data">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
 
 
-    <hr>
 
-    <!-- Footer -->
-      <div class="footer-bottom">
-       <p>Powered by | Musicbootstrap 2018</p>
-      </div>
-      <!-- /.container -->
+  <hr>
 
- 
+  <!-- Footer -->
+  <div class="footer-bottom">
+    <p>Powered by | Musicbootstrap 2018</p>
+  </div>
+  <!-- /.container -->
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-        <script type="text/javascript" src="./javascript/javascript.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <script type="text/javascript" src="./javascript/javascript.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script type="text/javascript" src="assets/javascript/textart.js"></script>
+
 
 
 </body>
