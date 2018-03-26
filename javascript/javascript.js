@@ -23,8 +23,10 @@ $(document).ready(function () {
     }).then(function (response) {
         var result = response;
         var artistObject = (result.artist.bio.content);
-        $("#artistResult").html(artistObject);
-        //console.log("This");
+        var artistPhoto = (result.artist.image[3]["#text"]);
+        $("#artistResult").html("");
+        $("#artistResult").append("<img src=" + artistPhoto + "/>" + artistObject);
+        console.log(result);
     })
    
     //artistAlbum AJAX call
@@ -46,8 +48,9 @@ $(document).ready(function () {
         var albumImage5 = (albumResult.topalbums.album[4].image[1]["#text"]);
    
         //append results to
-        $("#albumResults").append("<img src=" + albumImage + "/> " + albumObject + "<br>" + "<img src=" + albumImage2 + "/> " + albumObject2 + "<br>" + "<img src=" + albumImage3 + "/> " + albumObject3 + "<br>" + "<img src=" + albumImage4 + "/> " + albumObject4 + "<br>" + "<img src=" + albumImage5 + "/> " + albumObject5 + "<br>");
-        console.log("This");
+        $("#albumResults").html("");
+        $("#albumResults").append("<img src=" + albumImage + "/> " + "<a href='https://last.fm/search/albums?q=(\""+albumObject+"\")'>" + albumObject + "</>"+ "<br>" + "<img src=" + albumImage2 + "/> " + "<a href='https://last.fm/search/albums?q=(\""+albumObject2+"\")'>" + albumObject2 + "</>"+ "<br>" +"<img src=" + albumImage3 + "/> " + "<a href='https://last.fm/search/albums?q=(\""+albumObject3+"\")'>" + albumObject3 + "</>"+ "<br>" + "<img src=" + albumImage4 + "/> " + "<a href='https://last.fm/search/albums?q=(\""+albumObject4+"\")'>" + albumObject4 + "</>"+ "<br>" + "<img src=" + albumImage5 + "/> " + "<a href='https://last.fm/search/albums?q=(\""+albumObject5+"\")'>" + albumObject5 + "</>"+ "<br>" );
+                console.log("This");
    
     })
    
@@ -68,7 +71,8 @@ $(document).ready(function () {
         var similarImage5 = (similarResult.similarartists.artist[4].image[1]["#text"]);
    
         console.log(response);
-        $("#similarResults").append("<img onclick='searchArtist(\"" + similarObject + "\")' src=" + similarImage + "/> " + similarObject + "<br>" + "<img src=" + similarImage2 + "/> " + similarObject2 + "<br>" + "<img src=" + similarImage3 + "/> " + similarObject3 + "<br>" + "<img src=" + similarImage4 + "/> " + similarObject4 + "<br>" + "<img src=" + similarImage5 + "/> " + similarObject5 + "<br>");
+        $("#similarResults").html("");
+        $("#similarResults").append("<img onclick='searchArtist(\"" + similarObject + "\")' src=" + similarImage + "/> " + similarObject + "<br>" + "<img onclick='searchArtist(\"" + similarObject2 + "\")' src=" + similarImage2 + "/> " + similarObject2 + "<br>" + "<img onclick='searchArtist(\"" + similarObject3 + "\")' src=" + similarImage3 + "/> " + similarObject3 + "<br>" + "<img onclick='searchArtist(\"" + similarObject4 + "\")' src=" + similarImage4 + "/> " + similarObject4 + "<br>" + "<img onclick='searchArtist(\"" + similarObject5 + "\")' src=" + similarImage5 + "/> " + similarObject5 + "<br>" );
         console.log("This");
    
     })
