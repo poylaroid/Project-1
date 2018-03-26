@@ -21,10 +21,14 @@ $(document).ready(function () {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
+        console.log(response)
         var result = response;
         var artistObject = (result.artist.bio.content);
         $("#artistResult").html(artistObject);
-        //console.log("This");
+        var artistImage1 = (result.artist.image[3]["#text"]);
+        $("#artistImage").html("<img src=" + artistImage1 + "/>")
+
+        
     })
    
     //artistAlbum AJAX call
@@ -46,8 +50,8 @@ $(document).ready(function () {
         var albumImage5 = (albumResult.topalbums.album[4].image[1]["#text"]);
    
         //append results to
-        $("#albumResults").append("<img src=" + albumImage + "/> " + albumObject + "<br>" + "<img src=" + albumImage2 + "/> " + albumObject2 + "<br>" + "<img src=" + albumImage3 + "/> " + albumObject3 + "<br>" + "<img src=" + albumImage4 + "/> " + albumObject4 + "<br>" + "<img src=" + albumImage5 + "/> " + albumObject5 + "<br>");
-        console.log("This");
+        $("#albumResults").html("<img src=" + albumImage + "/> " + albumObject + "<br>" + "<img src=" + albumImage2 + "/> " + albumObject2 + "<br>" + "<img src=" + albumImage3 + "/> " + albumObject3 + "<br>" + "<img src=" + albumImage4 + "/> " + albumObject4 + "<br>" + "<img src=" + albumImage5 + "/> " + albumObject5 + "<br>");
+        
    
     })
    
@@ -67,9 +71,9 @@ $(document).ready(function () {
         var similarObject5 = (similarResult.similarartists.artist[4].name);
         var similarImage5 = (similarResult.similarartists.artist[4].image[1]["#text"]);
    
-        console.log(response);
-        $("#similarResults").append("<img onclick='searchArtist(\"" + similarObject + "\")' src=" + similarImage + "/> " + similarObject + "<br>" + "<img src=" + similarImage2 + "/> " + similarObject2 + "<br>" + "<img src=" + similarImage3 + "/> " + similarObject3 + "<br>" + "<img src=" + similarImage4 + "/> " + similarObject4 + "<br>" + "<img src=" + similarImage5 + "/> " + similarObject5 + "<br>");
-        console.log("This");
+        
+        $("#similarResults").html("<img onclick='searchArtist(\"" + similarObject + "\")' src=" + similarImage + "/> " + similarObject + "<br>" + "<img src=" + similarImage2 + "/> " + similarObject2 + "<br>" + "<img src=" + similarImage3 + "/> " + similarObject3 + "<br>" + "<img src=" + similarImage4 + "/> " + similarObject4 + "<br>" + "<img src=" + similarImage5 + "/> " + similarObject5 + "<br>");
+        
    
     })
   }
