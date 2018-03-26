@@ -126,17 +126,21 @@ tr{
       color:#fff;
   }
 
-  #myDIV {
+  /* #myDIV {
     width: 100%;
     padding: 50px 0;
     text-align: center;
     background-color: lightblue;
     margin-top: 20px;
-  }
+  } */
 
 
   #artistImage{
       float: left;
       position:relative;
       padding-right : 10px;
+  }
+
+  #border-color{
+      border-color: #232425;
   }
