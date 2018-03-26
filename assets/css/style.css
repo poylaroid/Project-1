@@ -133,3 +133,10 @@ tr{
     background-color: lightblue;
     margin-top: 20px;
   }
+
+
+  #artistImage{
+      float: left;
+      position:relative;
+      padding-right : 10px;
+  }
