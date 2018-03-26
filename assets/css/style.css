@@ -8,6 +8,7 @@
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     background-image: url("../images/music.jpg");
+    margin-top: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,16 +18,11 @@
         background-color: black;
     }
 
-    /* .top-text{
-        font-family: 'Rammetto One', cursive;
-        text-align: center;
-        color: white;
-    } */
 
-/* display-4 font */
+/* display-4 font LOGO */
 .display-4 {
     font-family: 'Rammetto One', cursive;
-    color: #f1f5f8;
+    color: #0d85ee;
     text-align: center;
     text-shadow: 3px 3px 0px #000;
 
@@ -130,10 +126,21 @@ tr{
       color:#fff;
   }
 
-  #myDIV {
+  /* #myDIV {
     width: 100%;
     padding: 50px 0;
     text-align: center;
     background-color: lightblue;
     margin-top: 20px;
+  } */
+
+
+  #artistImage{
+      float: left;
+      position:relative;
+      padding-right : 10px;
+  }
+
+  #border-color{
+      border-color: #232425;
   }
