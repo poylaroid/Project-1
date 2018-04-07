@@ -4,7 +4,9 @@ $(document).ready(function () {
   $("#song-field").hide();
   $("#video-field").hide();
   $("#recent-field").hide();
-
+  //$(".parallax1").hide();
+  $(".parallax2").hide();
+  $(".parallax3").hide();
 
 
   $("#search-button").on("click", function (event) {
@@ -17,6 +19,10 @@ $(document).ready(function () {
     $("#song-field").show();
     $("#video-field").show();
     $("#recent-field").show();
+    //$(".parallax1").show();
+    $(".parallax2").show();
+    $(".parallax3").show();
+  
   
 
     var queryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + channelName + "&key=AIzaSyC30mnkcq5ly-Nr-kHMh0f05WwzzVtuO3Q&maxResults=10"
