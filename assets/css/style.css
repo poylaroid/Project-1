@@ -149,19 +149,19 @@ tr{
   }
 
   
-  .parallax1 {
+   /* .parallax1 {
     /* The image used */
-    background-image: url("../images/back1.jpg");
+    /*background-image: url("../images/back1.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    /*min-height: 500px; 
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    /*background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 
 .parallax2 {
     /* The image used */
